@@ -9,10 +9,97 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size:14px;
     color:$black;
-    background:$gray-100;
-    padding-top:45px;
+    background:$neutral-100;
 }
 
 p {
     margin-bottom:10px;
+}
+
+a {
+    color: $neutral-900;
+
+    &:hover {
+        color: $neutral-600;
+    }
+}
+
+.top-nav {
+    height: 55px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $neutral-900;
+
+    &__menu {
+        display: flex;
+        gap: 25px;
+
+        li {
+            display: flex;
+        }
+
+        a {
+            display: flex;
+            gap: 5px;
+            color: $white;
+        }
+    }
+}
+
+.user-nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    background: $neutral-100;
+    color: $neutral-900;
+    padding: 3px 15px 3px 3px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    >img {
+        width: 30px;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid $neutral-300;
+    }
+
+    &__sub {
+        position: absolute;
+        left: 0px;
+        padding-top: 40px;
+        top: 0px;
+        width: 100%;
+        display: none;
+
+        ul {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            background: $white;
+            border-radius: 5px;
+            gap: 5px;
+        }
+    }
+
+    &:hover {
+        background: $white;
+
+        .user-nav__sub {
+            display: block;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    left: 0px;
+    overflow: auto;
+    top: 55px;
+    width: 260px;
+    height: calc(100vh - 55px);
+    background: $neutral-800;
 }
