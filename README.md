@@ -1,2 +1,2 @@
-# webarazi-admin-dashboard-theme
+# Admin Dashboard Theme
 Work in progress 😊
