@@ -102,4 +102,47 @@ a {
     width: 260px;
     height: calc(100vh - 55px);
     background: $neutral-800;
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        >li {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            >a {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px 30px;
+                color: $white;
+                border-top: 1px solid $neutral-900;
+                font-weight: 500;
+
+                >div {
+                    display: flex;
+                    gap: 5px;
+                }
+            }
+        }
+
+        &-sub {
+            padding: 0 0 15px 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            li {
+                display: flex;
+            }
+
+            a {
+                color: $white;
+            }
+        }
+    }
 }
