@@ -32,6 +32,11 @@ a {
     justify-content: space-between;
     background: $neutral-900;
 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
     &__menu {
         display: flex;
         gap: 25px;
@@ -144,5 +149,25 @@ a {
                 color: $white;
             }
         }
+    }
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 260px);
+    margin-top: 55px;
+    margin-left: 260px;
+
+    &__header {
+        padding: 20px 30px;
+        background: $white;
+    }
+
+    &__container {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
 }
