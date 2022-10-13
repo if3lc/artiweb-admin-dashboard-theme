@@ -24,6 +24,28 @@ a {
     }
 }
 
+//Menu ul>li>a>i
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    li {
+        display: flex;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    i {
+        font-size: 18px;
+    }
+}
+
+//Top Navigation
 .top-nav {
     height: 55px;
     padding: 0 30px;
@@ -98,7 +120,8 @@ a {
     }
 }
 
-.nav {
+//Sidebar
+.sidebar {
     display: flex;
     position: fixed;
     left: 0px;
@@ -152,6 +175,7 @@ a {
     }
 }
 
+//Dashboard
 .dashboard {
     display: flex;
     flex-direction: column;
@@ -169,6 +193,27 @@ a {
             font-size: 22px;
             font-weight: 600;
         }
+
+        &-search {
+            display: flex;
+            position: relative;
+
+            input {
+                border: 1px solid $neutral-300;
+                border-radius: 5px;
+                padding: 10px;
+                width: 300px;
+            }
+
+            button {
+                border: none;
+                background: none;
+                position: absolute;
+                font-size: 24px;
+                right: 10px;
+                top: 5px;
+            }
+        }
     }
 
     &__container {
@@ -176,5 +221,21 @@ a {
         display: flex;
         flex-direction: column;
         gap: 30px;
+    }
+}
+
+.form {
+    padding: 30px;
+    border-radius: 10px;
+    background: $white;
+
+    &__title {
+        display: flex; 
+        flex-direction: column;
+
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+        }
     }
 }
