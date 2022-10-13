@@ -162,6 +162,13 @@ a {
     &__header {
         padding: 20px 30px;
         background: $white;
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
     }
 
     &__container {
