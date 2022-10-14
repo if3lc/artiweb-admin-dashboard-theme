@@ -2,14 +2,20 @@
 
 @import '_reset';
 @import '_colors';
-@import '_shortcuts';
 
 //Main
 body {
     font-family: 'Poppins', sans-serif;
-    font-size:14px;
+    font-size:16px;
     color:$black;
     background:$neutral-100;
+}
+
+input, 
+select, 
+textarea, 
+button {
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
@@ -24,7 +30,24 @@ a {
     }
 }
 
-//Menu ul>li>a>i
+//Button
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+
+    &--blue {
+        background: $blue-600;
+        color: $white;
+    }
+}
+
+//Menu
 .menu {
     display: flex;
     gap: 20px;
@@ -54,7 +77,8 @@ a {
     justify-content: space-between;
     background: $neutral-900;
 
-    position: absolute;
+    position: fixed;
+    z-index: 99;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -228,6 +252,11 @@ a {
     padding: 30px;
     border-radius: 10px;
     background: $white;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
 
     &__title {
         display: flex; 
@@ -238,4 +267,42 @@ a {
             font-weight: 600;
         }
     }
+
+    &-row {
+        display: flex;
+        gap: 20px;
+    }
+
+    &-col {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+
+    label {
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    input {
+        padding: 10px 15px;
+        border: 1px solid $neutral-300;
+        border-radius: 5px;
+    }
+
+    select {
+        padding: 10px;
+        border: 1px solid $neutral-300;
+        border-radius: 5px;
+    }
+
+    textarea {
+        padding: 10px;
+        border: 1px solid $neutral-300;
+        border-radius: 5px;
+        min-height: 165px;
+    }
 }
+
+@import '_shortcuts';

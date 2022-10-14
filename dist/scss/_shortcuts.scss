@@ -70,4 +70,28 @@
     &-20 {
         gap: 20px;
     }
+
+    &-30 {
+        gap: 30px;
+    }
+}
+
+//Width
+.w {
+    &-full {
+        width: 100%;
+    }
+    
+    &-310 {
+        width: 310px;
+    }
+}
+
+//Shrink
+.shrink {
+    flex-shrink: 1;
+
+    &-0 {
+        flex-shrink: 0;
+    }
 }
