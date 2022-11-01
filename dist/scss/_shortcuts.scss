@@ -95,3 +95,22 @@
         flex-shrink: 0;
     }
 }
+
+//for Info
+.text {
+    &-orange {
+        color: $orange-600;
+    }
+
+    &-violet {
+        color: $violet-600;
+    }
+
+    &-emerald {
+        color: $emerald-600;
+    }
+
+    &-purble {
+        color: $purple-600;
+    }
+}

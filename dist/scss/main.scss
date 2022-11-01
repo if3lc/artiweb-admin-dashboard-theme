@@ -62,6 +62,24 @@ i.uil {
         background: $red-500;
         color: $white;
     }
+
+    &--lang {
+        padding: 5px;
+        font-weight: 400;
+        border: 1px solid $neutral-300;
+        
+        img {
+            width: 25px;
+            height: 25px;
+            border-radius: 3px;
+
+        }
+
+        &.active {
+            border: 1px solid $amber-600;
+            background:$amber-300;
+        }
+    }
 }
 
 //table
@@ -247,6 +265,34 @@ i.uil {
     }
 }
 
+//Pagination
+.pagination {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $neutral-300;
+
+        &:hover {
+            background: $neutral-200;
+        }
+
+        &.active {
+            background: $blue-600;
+            border: 1px solid $blue-600;
+            color: $white;
+        }
+    }
+}
+
 //Dashboard
 .dashboard {
     display: flex;
@@ -296,6 +342,55 @@ i.uil {
     }
 }
 
+//Info
+.info {
+    width: 100%;
+    padding: 20px;
+    background: $white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+
+    i {
+        font-size: 45px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+
+        small {
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        span {
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+}
+
+//Alert
+.alert {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid $neutral-300;
+    background: $neutral-50;
+    border-radius: 5px;
+    padding: 15px;
+
+    &--error {
+        color: $red-900;
+        background: $red-50;
+        border: 1px solid $red-400;
+    }
+}
+
+
+//Form
 .form {
     padding: 30px;
     border-radius: 10px;
@@ -321,7 +416,7 @@ i.uil {
         gap: 20px;
     }
 
-    &-col {
+    &-field {
         display: flex;
         flex-direction: column;
         gap: 5px;
