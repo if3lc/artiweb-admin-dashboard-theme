@@ -9,8 +9,6 @@
 
 //Justify Content
 .justify {
-    display: flex;
-
     &-start {
         justify-content: start;
     }
@@ -38,8 +36,6 @@
 
 //Align Items
 .items {
-    display: flex;
-
     &-start {
         align-items: flex-start;
     }
@@ -58,6 +54,56 @@
 
     &-stretch {
         align-items: stretch;
+    }
+}
+
+//Text Align
+.text {
+    &-left {
+        text-align: left;
+    }
+
+    &-right {
+        text-align: right;
+    }
+
+    &-center {
+        text-align: center;
+    }
+
+    &-justify {
+        text-align: justify;
+    }
+
+    &-start {
+        text-align: start;
+    }
+
+    &-end {
+        text-align: end;
+    }
+}
+
+//Place Items
+.place-items {
+    &-start {
+        place-items: start;
+    }
+
+    &-end {
+        place-items: end;
+    }
+
+    &-center {
+        place-items: center;
+    }
+
+    &-baseline {
+        place-items: baseline;
+    }
+
+    &-stretch {
+        place-items: stretch;
     }
 }
 
@@ -84,6 +130,13 @@
     
     &-310 {
         width: 310px;
+    }
+}
+
+//Height
+.h {
+    &-screen {
+        height: 100vh;
     }
 }
 

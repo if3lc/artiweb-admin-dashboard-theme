@@ -53,6 +53,11 @@ i.uil {
         gap: 3px;
     }
 
+    &--ghost {
+        background: transparent;
+        border: 1px solid $neutral-600;
+    }
+
     &--blue {
         background: $blue-600;
         color: $white;
@@ -389,6 +394,31 @@ i.uil {
     }
 }
 
+//Line 
+.line {
+    color: $neutral-400;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: $neutral-200;
+        margin-right: 10px;
+    }
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: $neutral-200;
+        margin-left: 10px;
+    }
+}
+
 
 //Form
 .form {
@@ -445,6 +475,33 @@ i.uil {
         border: 1px solid $neutral-300;
         border-radius: 5px;
         min-height: 165px;
+    }
+}
+
+//Margin
+.mt {
+    &-30 {
+        margin-top: 30px;
+    }
+}
+
+//Login
+.login {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    background: $white;
+
+    &__img {
+        width: 450px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__form {
+        width: 450px;
+        padding: 40px;
+        border-radius: 0px;
     }
 }
 
