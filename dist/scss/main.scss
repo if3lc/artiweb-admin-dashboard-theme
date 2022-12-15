@@ -87,6 +87,22 @@ i.uil {
     }
 }
 
+.badge {
+    line-height: 1;
+    border-radius: 3px;
+    padding: 3px 5px;
+    font-size: 12px;
+    background: $neutral-100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--red {
+        background: $red-500;
+        color: $white;
+    }
+}
+
 //table
 .table {
     border-collapse: collapse;
@@ -263,8 +279,12 @@ i.uil {
             }
 
             a {
+                display: flex;
                 color: $white;
                 font-size: 14px;
+                gap: 5px;
+                align-items: center;
+                justify-content: center;
             }
         }
     }
